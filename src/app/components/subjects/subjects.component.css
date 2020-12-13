@@ -1,0 +1,24 @@
+.subject{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;   
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+.title{
+    font-weight: 800;
+}
+.interaction{
+    text-align: center;
+}
+.interaction > a:nth-child(2){
+color: cornflowerblue;
+margin-left: 2rem;
+}
+.interaction > a:nth-child(3){
+    color: #e63946;
+    margin-left: 2rem;
+    }
+    p {
+        height:60px;
+        line-height:20px; /* Height / no. of lines to display */
+        overflow:hidden;
+    }

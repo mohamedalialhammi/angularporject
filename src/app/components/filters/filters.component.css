@@ -1,0 +1,19 @@
+button{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 14px;
+     font-style: normal;
+      font-variant: normal; 
+      font-weight: 400; 
+      line-height: 20px;
+      margin-bottom: 3rem;
+      border-style: none;
+      color: aliceblue;
+      background-color: #1E85C6;
+  }
+  h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 40px;
+     font-style: normal;
+      font-variant: normal; 
+      font-weight: 700;
+    color: #F05558;
+} 

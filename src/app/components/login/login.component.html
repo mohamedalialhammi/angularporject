@@ -1,0 +1,20 @@
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <img src="../../../assets/login.jpg" alt="loginimage" class="w-100" >
+        </div>
+        <div class="col-sm">
+            <div class="w-75 " style="text-align: center;margin: 6rem;">
+                <h1 class="d-flex justify-content-center">Login</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="username">
+            </div>
+            <input type="password" id="inputPassword5" class="form-control mb-3" aria-describedby="passwordHelpBlock" aria-label="Password" placeholder="Password"  [(ngModel)]="password">
+            <button type="button" class="btn btn-success" (click)="login()">LOGIN</button>
+            <a class="dropdown-item d-flex justify-content-center" href="/signup">New around here? Sign up</a>
+            </div>
+        </div>
+       
+    </div>
+</div>

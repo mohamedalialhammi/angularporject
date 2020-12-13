@@ -1,0 +1,41 @@
+
+  <div class="container">
+      <form [formGroup]='contactusForm'>
+    <div class="row">
+        <div class="col-sm">
+            <img src="../../../assets/contactus.png" alt="loginimage" class="w-100" >
+        </div>
+        <div class="col-sm">
+            <div class="w-75 " style="text-align: center;margin: 6rem;">
+                <h1 class="d-flex justify-content-center">Contact Us Form</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" formControlName="email">
+            </div>
+            <div *ngIf="email.invalid && (email.dirty || email.touched) "
+            class="alert alert-danger">
+            <div *ngIf="email.errors.required">
+              email must be filed
+            </div>
+            <div *ngIf="email.errors.email">
+              email form doesnt fit
+            </div>
+            <div *ngIf="email.errors.pattern">
+              email must be @esprit.tn
+            </div>
+          </div>
+            <input type="text" id="form10" class="md-textarea form-control" formControlName="body">
+            <div *ngIf="body.invalid && (body.dirty || body.touched) "
+            class="alert alert-danger">
+            <div *ngIf="body.errors.required">
+                body must be filed
+            </div>
+            <div *ngIf="body.errors.minlength">
+                body must have atleast 8 characters
+            </div>
+          </div>
+            <button type="button" class="btn btn-success" (click)="contactform()">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

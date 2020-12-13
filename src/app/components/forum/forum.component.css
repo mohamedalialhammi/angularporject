@@ -1,0 +1,9 @@
+.addsubject{
+        display: flex;
+        color: rgb(235, 0, 59);
+        flex-direction: row-reverse;
+        /* border-style: solid; */
+        width: 100%;
+        margin-bottom: 1rem;
+    
+}

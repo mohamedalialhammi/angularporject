@@ -1,0 +1,14 @@
+<div class="d-flex flex-column">
+            <h1>Search</h1>
+            <div class="w-100">
+                <input class="form-control mr-sm-2 mb-2" type="search" [(ngModel)]="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 w-50" (click)="doSearch()" type="submit">Search</button>
+            </div>
+                <h1>Filter</h1>
+            <ul class="list-group">
+                <li *ngFor="let item of tags" (click)="sendFilter(item)" class="list-group-item list-group-item-info">
+                    {{item}}
+                </li>
+            </ul>
+            
+        </div>

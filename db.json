@@ -1,0 +1,307 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "dali",
+      "password": "password",
+      "email": "mohamedali.alhami@esprit.tn",
+      "gender": "Male",
+      "classe": "4TWIN"
+    },
+    {
+      "username": "mohamedali",
+      "password": "mohamedali",
+      "email": "mohamedali@esprit.tn",
+      "gender": "Male",
+      "classe": "3B",
+      "id": 2
+    },
+    {
+      "username": "testangular",
+      "password": "testangular",
+      "email": "testangular@esprit.tn",
+      "gender": "Male",
+      "classe": "1A",
+      "id": 3
+    },
+    {
+      "username": "testangularr",
+      "password": "testangularr",
+      "email": "testangularr@esprit.tn",
+      "gender": "Male",
+      "classe": "4TWIN",
+      "id": 4
+    },
+    {
+      "username": "angularvalidation",
+      "password": "angularvalidation",
+      "email": "dali@esprit.tn",
+      "gender": "Male",
+      "classe": "4TWIN",
+      "id": 5
+    },
+    {
+      "username": "angularvalidation",
+      "password": "angularvalidation",
+      "email": "esprit@esprit.tn",
+      "gender": "Male",
+      "classe": "2A",
+      "id": 6
+    },
+    {
+      "username": "mohamedtest",
+      "password": "mohamedtest",
+      "email": "mohamed@esprit.tn",
+      "gender": "Male",
+      "classe": "4TWIN",
+      "id": 7
+    },
+    {
+      "username": "mohamedali",
+      "password": "mohamedali",
+      "email": "dali@esprit.tn",
+      "gender": "Male",
+      "classe": "3B",
+      "id": 8
+    },
+    {
+      "username": "mohamedalitest",
+      "password": "mohamedalitest",
+      "email": "dali@esprit.tn",
+      "gender": "Male",
+      "classe": "4TWIN",
+      "id": 9
+    }
+  ],
+  "contactus": [
+    {
+      "id": 1,
+      "email": "dali300300@gmail.com",
+      "body": "testContactus"
+    },
+    {
+      "email": "mohamed@esprit.tn",
+      "body": "dazdazdazd",
+      "id": 2
+    },
+    {
+      "email": "esdl@esprit.tn",
+      "body": "loremmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+      "id": 3
+    },
+    {
+      "email": "dali@esprit.tn",
+      "body": "loremmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+      "id": 4
+    },
+    {
+      "email": "dali@esprit.tn",
+      "body": "loremmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+      "id": 5
+    },
+    {
+      "email": "dali@esprit.tn",
+      "body": "reclamation",
+      "id": 6
+    },
+    {
+      "email": "",
+      "body": "",
+      "id": 7
+    },
+    {
+      "email": "dai@esprit.tn",
+      "body": "loremmmmmmm",
+      "id": 8
+    },
+    {
+      "email": "dali@esprit.tn",
+      "body": "loremmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+      "id": 9
+    },
+    {
+      "email": "dali@esprit.tn",
+      "body": "loremipsum",
+      "id": 10
+    },
+    {
+      "email": "dali@esprit.tn",
+      "body": "loremmmm",
+      "id": 11
+    },
+    {
+      "email": "esprit@esprit.tn",
+      "body": "lroemipsum",
+      "id": 12
+    },
+    {
+      "email": "espti@esprit.tn",
+      "body": "loremipsum",
+      "id": 13
+    },
+    {
+      "email": "lorem@esprit.tn",
+      "body": "loremipsum",
+      "id": 14
+    },
+    {
+      "email": "test@esprit.tn",
+      "body": "loremipsum",
+      "id": 15
+    }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "title": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      "subject": "the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "author": "dali",
+      "time": "05/04/2020",
+      "tags": "2A"
+    },
+    {
+      "title": "day,asubject",
+      "subject": "azdazdzadazdazdazdazd",
+      "tags": "dayna",
+      "time": "12-12-20",
+      "author": "mohamedali",
+      "id": 4
+    },
+    {
+      "title": "aloooooooooooooo",
+      "subject": "alooooooooooooooooooooooooooooo",
+      "tags": "alooo",
+      "time": "12-12-20",
+      "author": "mohamedali",
+      "id": 5
+    },
+    {
+      "title": "nblikenblikenblikenblike",
+      "subject": "nblikenblikenblikenblike",
+      "tags": "nblikenblikenblike",
+      "time": "12-12-20",
+      "author": "mohamedali",
+      "id": 6
+    },
+    {
+      "title": "test angular update",
+      "subject": "test angular cc lorem",
+      "tags": "4twin",
+      "time": "13-12-20",
+      "author": "testangularr",
+      "id": 7
+    },
+    {
+      "title": "updateloremipsum",
+      "subject": "tesubjectforvalidation",
+      "tags": "4twin5",
+      "time": "13-12-20",
+      "author": "angularvalidation",
+      "id": 8
+    },
+    {
+      "title": "testupdate",
+      "subject": "updateloremipsumddddd",
+      "tags": "lorem1",
+      "time": "13-12-20",
+      "author": "mohamedtest",
+      "id": 9
+    },
+    {
+      "title": "titletest",
+      "subject": "subjecttesssstvalidation",
+      "tags": "4twin7",
+      "time": "13-12-20",
+      "author": "mohamedali",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "body": "the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+      "commentor": "mohamedali",
+      "post_id": "1",
+      "id": 6
+    },
+    {
+      "body": "the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+      "commentor": "mohamedali",
+      "post_id": "2",
+      "id": 8
+    },
+    {
+      "body": "containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "commentor": "mohamedali",
+      "post_id": "2",
+      "id": 9
+    },
+    {
+      "body": "dana",
+      "commentor": "dali",
+      "post_id": "4",
+      "id": 10
+    }
+  ],
+  "reactions": [
+    {
+      "postId": 2,
+      "liker": 2,
+      "likedislike": 1,
+      "id": 3
+    },
+    {
+      "postId": 2,
+      "liker": 1,
+      "likedislike": 1,
+      "id": 5
+    },
+    {
+      "postId": 4,
+      "liker": 2,
+      "likedislike": 1,
+      "id": 6
+    },
+    {
+      "postId": 5,
+      "liker": 2,
+      "likedislike": 0,
+      "id": 7
+    },
+    {
+      "postId": 6,
+      "liker": 2,
+      "likedislike": 0,
+      "id": 8
+    },
+    {
+      "postId": 5,
+      "liker": 1,
+      "likedislike": 0,
+      "id": 9
+    },
+    {
+      "postId": 4,
+      "liker": 1,
+      "likedislike": 1,
+      "id": 10
+    },
+    {
+      "postId": 8,
+      "liker": 5,
+      "likedislike": 0,
+      "id": 11
+    },
+    {
+      "postId": 10,
+      "liker": 2,
+      "likedislike": 1,
+      "id": 12
+    },
+    {
+      "postId": 2,
+      "liker": 9,
+      "likedislike": 1,
+      "id": 13
+    }
+  ]
+}

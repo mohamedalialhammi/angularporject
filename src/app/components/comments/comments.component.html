@@ -1,0 +1,29 @@
+<div style="text-align: center;" >
+    <h3 class="mt-5 mb-3">Add Your Comment</h3>
+    <div class="md-form">
+        <textarea id="form7" class="md-textarea form-control mb-3" rows="3" [(ngModel)]="body"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="addcomment()">Submit</button>
+    </div>
+    
+<div style="text-align: center;" >
+<h3 class="mt-5">Comments</h3>
+<div *ngFor=" let comment of comments;let i=index">
+  <div class="row w-100" style="justify-content: center;">
+    <div class="col-sm-8" style="background-color: antiquewhite;border-style: solid;margin-bottom: 2rem;">
+      <p>{{comment.body}}</p>
+      <a>Commentor:{{comment.commentor}}</a>
+    </div>
+    <div class="col-sm-1" style="
+    margin-top: 1.5rem;
+">
+      <img src="../../../assets/delete.jpg" alt="girl" style="width: 40px;" (click)="deletecomment(comment.id,i)" *ngIf="comment.commentor==user.username">
+    </div>
+
+
+
+
+</div>
+</div>
+
+</div>

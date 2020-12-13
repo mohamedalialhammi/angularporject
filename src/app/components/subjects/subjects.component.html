@@ -1,0 +1,25 @@
+<div class="d-flex flex-column">
+    <div *ngIf="posts?.length>0">
+         
+        <div  class=" subject ml-0" *ngFor="let post of calculLikes(posts)">          
+            <div class="row" >
+                        <div class="col-sm-1">
+                            <img src="../../../assets/girlicon.png" alt="maleicon" style="width: 60px;" class="mt-2">
+                        </div>
+                        <div class="col-sm ml-2">
+                           <a  [routerLink]="['/subjectDetail',post.id]" routerLinkActive="active"> <h4 class="title" >{{post.title}}</h4></a>
+                                <div>
+                                    <a>{{post.time}}</a><a class="ml-2">{{post.author}}</a><a class="ml-2">{{post.tags}}</a>
+                                </div>
+                        </div>
+            </div>
+                <p style="color: darkolivegreen;font-weight: 400;" class="mt-2">{{post.subject}}</p>
+                <div class="interaction">
+                    <a></a>
+                    <a> {{post.nbliks}} Likes</a>
+                    <a> {{post.nbdsliks}} DisLikes</a>
+                </div>
+        </div>
+    </div>
+        <div  *ngIf="posts?.length==0">No Subject Found</div>
+</div>

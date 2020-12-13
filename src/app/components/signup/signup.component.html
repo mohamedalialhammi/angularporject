@@ -1,0 +1,81 @@
+  <div class="container">
+    <form [formGroup]='userForm'>
+    <div class="row">
+        <div class="col-sm">
+            <img src="../../../assets/signup.jpg" alt="loginimage" class="w-100" >
+        </div>
+        <div class="col-sm">
+            <div class="w-75 " style="text-align: center;margin: 6rem;">
+                <h1 class="d-flex justify-content-center">Signup</h1>
+            <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" formControlName="username">
+                <div *ngIf="username.invalid && (username.dirty || username.touched) "
+								class="alert alert-danger">
+								<div *ngIf="username.errors.required">
+									username must be filed
+								</div>
+								<div *ngIf="username.errors.pattern">
+                  username doesnt include numbers
+								</div>
+							</div>
+            </div>
+            <input type="password" id="inputPassword5" class="form-control mb-3" aria-describedby="passwordHelpBlock" aria-label="Password" placeholder="Password" formControlName="password">
+            <div *ngIf="password.invalid && (password.dirty || password.touched) "
+            class="alert alert-danger">
+            <div *ngIf="password.errors.required">
+              password must be filed
+            </div>
+            <div *ngIf="password.errors.minlength">
+              password must have atleast 8 characters
+            </div>
+          </div>
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" formControlName="email">
+            <div *ngIf="email.invalid && (email.dirty || email.touched) "
+            class="alert alert-danger">
+            <div *ngIf="email.errors.required">
+              email must be filed
+            </div>
+            <div *ngIf="email.errors.email">
+              email form doesnt fit
+            </div>
+            <div *ngIf="email.errors.pattern">
+              email must be @esprit.tn
+            </div>
+          </div>
+            <div class="input-group mt-3">
+                <select class="custom-select" id="inputGroupSelect04" formControlName="gender">
+                  <option selected value="">Gender...</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div *ngIf="gender.invalid && (gender.dirty || gender.touched) "
+            class="alert alert-danger">
+            <div *ngIf="gender.errors.required || gender.errors.pattern ">
+              please chose a gender
+            </div>
+          </div>
+              <div class="input-group mt-3">
+                <select class="custom-select" id="inputGroupSelect04" formControlName="classe">
+                  <option selected value="Class...">Class...</option>
+                  <option value="1A">1A</option>
+                  <option value="2A">2A</option>
+                  <option value="3A">3A</option>
+                  <option value="3B">3B</option>
+                  <option value="4TWIN">4TWIN</option>
+                  <option value="4BI">4BI</option>
+                </select>
+              </div>
+              <div *ngIf="classe.invalid && (classe.dirty || classe.touched) "
+            class="alert alert-danger">
+            <div *ngIf="classe.errors.required || classe.errors.pattern ">
+              please chose a classe
+            </div>
+            </div>
+            <button type="submit" class="btn btn-success mt-3" (click)="singup()">Signup</button>
+            </div>
+        </div>
+       
+    </div>
+  </form>
+</div>

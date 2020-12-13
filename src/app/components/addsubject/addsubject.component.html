@@ -1,0 +1,52 @@
+
+  <div class="container">
+    <form  [formGroup]='postForm'>
+        <div class="row">
+                <div class="col-sm">
+                    <img src="../../../assets/addforum.jpg" alt="addforum" class="w-100" >
+                </div>
+            <div class="col-sm">
+                <div class="w-75 " style="text-align: center;margin: 6rem;">
+                    <h1 class="d-flex justify-content-center">Add Subject</h1>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1" formControlName="title">
+                </div>
+                <div *ngIf="title.invalid && (title.dirty || title.touched) "
+                    class="alert alert-danger">
+                    <div *ngIf="title.errors.required">
+                        title must be filed
+                    </div>
+                    <div *ngIf="title.errors.minlength">
+                        title must have atleast 8 characters
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                <input type="text" id="form10" class="md-textarea form-control" placeholder="Subject" formControlName="subject">
+                </div>
+                <div *ngIf="subject.invalid && (subject.dirty || subject.touched) "
+                    class="alert alert-danger">
+                    <div *ngIf="subject.errors.required">
+                        subject must be filed
+                    </div>
+                    <div *ngIf="subject.errors.minlength">
+                        subject must have atleast 20 characters
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                <input type="text" id="form10" class="md-textarea form-control" placeholder="Tag" formControlName="tags">
+                </div>
+                <div *ngIf="tags.invalid && (tags.dirty || tags.touched) "
+                    class="alert alert-danger">
+                    <div *ngIf="tags.errors.required">
+                        tag must be filed
+                    </div>
+                    <div *ngIf="tags.errors.minlength">
+                        tag must have atleast 3 characters
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" (click)=" postform()">Submit</button>
+                </div>
+                </div>
+        </div>
+                </form>
+</div>

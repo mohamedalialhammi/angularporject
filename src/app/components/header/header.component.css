@@ -1,0 +1,26 @@
+ul li:last-child{
+    
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 25px;
+    width: 91px;
+    text-align: center;
+    background:  #F05558;
+}
+ul li:nth-child(4)
+    {
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 25px;
+    width: 91px;
+    text-align: center;
+    background:  #1E85C6;
+}
+ul li:nth-child(4):hover{
+    background: #F05558;
+}
+
+ul li:last-child:hover{
+    background: #1E85C6;
+}
+

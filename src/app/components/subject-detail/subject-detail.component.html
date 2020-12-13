@@ -1,0 +1,87 @@
+<div class="container mt-5">
+<div *ngIf="update">
+    
+    <form  [formGroup]='postForm'>
+        <div class="row">
+            <div class="col-sm">
+                <div class="w-75 " style="text-align: center;margin: 6rem;">
+                    <h1 class="d-flex justify-content-center">Update Subject</h1>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1" formControlName="title">
+                </div>
+                <div *ngIf="title.invalid && (title.dirty || title.touched) "
+                    class="alert alert-danger">
+                    <div *ngIf="title.errors.required">
+                        title must be filed
+                    </div>
+                    <div *ngIf="title.errors.minlength">
+                        title must have atleast 8 characters
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                <input type="text" id="form10" class="md-textarea form-control" placeholder="Subject" formControlName="subject">
+                </div>
+                <div *ngIf="subject.invalid && (subject.dirty || subject.touched) "
+                    class="alert alert-danger">
+                    <div *ngIf="subject.errors.required">
+                        subject must be filed
+                    </div>
+                    <div *ngIf="subject.errors.minlength">
+                        subject must have atleast 20 characters
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                <input type="text" id="form10" class="md-textarea form-control" placeholder="Tag" formControlName="tags">
+                </div>
+                <div *ngIf="tags.invalid && (tags.dirty || tags.touched) "
+                    class="alert alert-danger">
+                    <div *ngIf="tags.errors.required">
+                        tag must be filed
+                    </div>
+                    <div *ngIf="tags.errors.minlength">
+                        tag must have atleast 8 characters
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" (click)=" updateform()">Update</button>
+                <button type="button" class="btn btn-success" style="margin-left: 20px;" (click)=" cancel()">Cancel</button>
+                </div>
+                </div>
+        </div>
+                </form>
+</div>
+<div *ngIf="!update">
+<h1>{{post?.title}}</h1>
+<div class="row">
+    <div class="col-sm-1">
+        <img src="../../../assets/girlicon.png" alt="girl">
+       
+    </div>
+    <div class="col-sm-9 ml-5">
+    <p style="font-weight: 400;" class="mt-2">{{post?.subject}}</p>
+    <div>
+        <a>{{post?.author}}</a><a class="ml-2">{{post?.time}}</a><a class="ml-2">{{post?.tags}}</a>
+        <div *ngIf="show">
+        <img src="../../../assets/delete.jpg" alt="girl" style="width: 40px;" (click)="deletesubject()">
+        <img src="../../../assets/update.jpg" alt="girl" style="width: 40px;" (click)="goupdate()">
+        </div>
+        <div class="d-flex justify-content-end">
+            <div style="
+            width: 10%;
+        ">
+            <img src="../../../assets/like.png" alt="like" class="w-25" (click)="reaction(1)">
+                <a class="ml-2">{{nblike}}</a>
+            </div>
+            <div style="
+            width: 10%;
+        ">
+            <img src="../../../assets/dislike.png"  class="w-25" (click)="reaction(0)">
+            <a class="ml-2">{{nbdislike}}</a>
+            
+        </div>
+        </div>
+    </div>    
+</div>
+</div>
+</div>
+<app-comments [comments]="comments" [post_id]="post_id"></app-comments>
+</div>
